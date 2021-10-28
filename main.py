@@ -1,21 +1,89 @@
-with open('emails.txt', 'r') as arquivo:
-    listaDic = {'nome': ' ', 'email': ' '}
-    emailss = arquivo.readlines()
+# passo 1
 
-    a = 0
-    b = 0
-    for x in range(1, 10):
-        nome = emailss.split('@')
-        #listaDic['nome'] = nome[0]
-        #listaDic['email'] = nome[2]
-       # print(nome)
-        # print(email)
-        # print(linhas)
-        #a = linhas.__len__()
-        print(nome)
-        print()
+# arquivo = open('emails.txt', 'r')
+# print(arquivo.read())
 
-arquivo.close()
+# passo 2
+# arquivo = open('emails.txt', 'r')
+# lines = arquivo.read()
+# print(lines)
+
+# passo 3
+# arquivo = open('emails.txt', 'r')
+# lines = arquivo.readlines()
+
+# for line in lines:
+#     print(line)
+
+# passo 4
+# arquivo = open('emails.txt', 'r')
+# lines = arquivo.readlines()
+
+# for line in lines:
+#     nome = line.split('@')[0]
+#     email = line
+#     print(nome, email)
+
+
+# passo 5
+# arquivo = open('emails.txt', 'r')
+# lines = arquivo.readlines()
+
+# lista_de_emails = {}
+
+# for line in lines:
+#     nome = line.split('@')[0]
+#     email = line
+#     item = f"nome: {nome}, email: {email}"
+#     print(item)
+
+
+
+# passo 6
+# arquivo = open('emails.txt', 'r')
+# lines = arquivo.readlines()
+
+# lista_de_emails = {}
+
+# for i, line in enumerate(lines):
+#     nome = line.split('@')[0]
+#     email = line
+#     item = f"nome: {nome}, email: {email}"
+#     print(i, item)
+
+# passo 7
+arquivo = open('emails.txt', 'r')
+lines = arquivo.readlines()
+
+lista_de_emails = {}
+
+for i, line in enumerate(lines):
+    nome = line.split('@')[0]
+    email = line
+    item = f"nome: {nome}, email: {email}"
+    lista_de_emails[i] = "{" + item + "}"
+
+print(lista_de_emails)
+
+
+# with open('emails.txt', 'r') as arquivo:
+#     listaDic = {'nome': ' ', 'email': ' '}
+#     emailss = arquivo.readlines()
+
+#     a = 0
+#     b = 0
+#     for x in range(1, 10):
+#         nome = emailss.split('@')
+#         #listaDic['nome'] = nome[0]
+#         #listaDic['email'] = nome[2]
+#        # print(nome)
+#         # print(email)
+#         # print(linhas)
+#         #a = linhas.__len__()
+#         print(nome)
+#         print()
+
+# arquivo.close()
 
 
 """
