@@ -1,9 +1,20 @@
 with open('emails.txt', 'r') as arquivo:
     listaDic = {'nome': ' ', 'email': ' '}
-    linhas = arquivo.readlines()
-    # print(linhas)
-    a = linhas.__len__()
-    print(a)
+    emailss = arquivo.readlines()
+
+    a = 0
+    b = 0
+    for x in range(1, 10):
+        nome = emailss.split('@')
+        #listaDic['nome'] = nome[0]
+        #listaDic['email'] = nome[2]
+       # print(nome)
+        # print(email)
+        # print(linhas)
+        #a = linhas.__len__()
+        print(nome)
+        print()
+
 arquivo.close()
 
 
