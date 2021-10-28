@@ -1,0 +1,16 @@
+Exercicio 2
+
+instalar um programa chamado dbeaver
+
+Criar uma branch a partir da main
+
+Nessa Branch:
+com dbeaver criar na raiz do projeto um banco de dados chamado db1
+
+
+
+criar um arquivo pytho  que:
+    conect no banco de dados db1
+    no banco db1 criar uma tabela chamada "users"
+    nessa tabela users tem que ter id, nome, email
+    usar o codigo anterior e salvar nessa tabela todos os nomes e emails
